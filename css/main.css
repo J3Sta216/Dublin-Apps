@@ -77,7 +77,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+    resize: none;
 }
 
 /* ==========================================================================
@@ -105,16 +105,24 @@ body {
     background: #282828;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
 h1 {
     text-transform: uppercase;
     color: #e7e8ea;
     font-weight: bold;
     font-family: Chunkfive;
+    font-size: 45px;
 }
 
 h2 {
     color: #e7e8ea;
     font-family: AlexandriaFLF;
+    font-size: 39px;
 }
 
 h3 {
@@ -161,6 +169,16 @@ button {
     border-radius: 5px;
     color: #ffffff;
     font-size: 15px;
+}
+
+a.button {
+    padding: 8px 25px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJkNmJjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNzQxODMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjk4OWQ4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==); 
+    height: 34px;
+    width: 130px;
+    border-radius: 5px;
+    font-family: Colaborate-Light;
+
 }
 
 button:hover {
@@ -289,6 +307,10 @@ main {
     top: 125px;
 }
 
+.slide-arrow-right:hover, .slide-arrow-left:hover {
+    cursor: pointer;
+}
+
 .slide-infobox {
     width: 227px;
     height: 220px;
@@ -298,14 +320,13 @@ main {
 
 .slide-infobox h1 {
     text-align: right;
-    font-size: 45px;
 }
 
 .slide-infobox h2 {
     float: right;
+    font-size: 39px;
     margin-left: 10px;
     text-align: right;
-    font-size: 39px;
 }
 
 .slide-infobox p {
@@ -551,6 +572,7 @@ main {
     width: 213px;
     float: left;
     margin-right: 72px;
+    margin-bottom: 10px;
 }
 
 .ipad-image-viewer:last-of-type {
@@ -567,14 +589,9 @@ main {
 }
 
 .ipad-image-viewer p {
-    margin: 4px 0px 0px 5px;
+    margin: 4px 0px 15px 5px;
     color: #5f7390;
 }
-
-.ipad-image-viewer button {
-    margin: 20px 0px 0px 10px
-}
-
 /*===============================
             iphone apps
 ================================*/
@@ -803,9 +820,12 @@ main {
     border: none;
 }
 
-.blog-iphone-apps button {
+.blog-iphone-apps a.button {
     float: right;
     font-size: 16.73px;
+    text-align: center;
+    padding: 8px 10px 0px 10px;
+
 }
 
 .blog-container .nav-bar {
@@ -1172,7 +1192,7 @@ footer h3 {
 .contact-form .form-textbox {
     position: absolute;
     right: -15px;
-    top: 62px;
+    top: 70px;
     height: 107px;
     width: 192px;
     color: #5e5e6a;
@@ -1180,7 +1200,7 @@ footer h3 {
 
 .contact-form .Submit-button {
     position: absolute;
-    bottom: -90px;
+    bottom: -100px;
     right: -14px;
 }
 
@@ -1192,6 +1212,7 @@ footer h3 {
 }
 
 .social-media img {
+    margin-top: 5px;
     margin-right: 16px;
 }
 
